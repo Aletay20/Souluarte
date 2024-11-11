@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main  # or 'master' if that's your default branch
+  name: git
+  repo: aletay20/souluarte
+  branch: main
 
 media_folder: "uploads"   # Folder for storing images
 public_folder: "/uploads" # Public path for images
@@ -11,7 +12,6 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "index.html"  # Path to your homepage file
+        file: "Old_Home.html"  # Path to your homepage file
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Pedidos Text", name: "text_pedidos", widget: "string" }
