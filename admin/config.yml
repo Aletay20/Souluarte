@@ -1,10 +1,10 @@
 backend:
   name: git
-  repo: aletay20/souluarte
+  repo: Aletay20/Souluarte
   branch: main
 
-media_folder: "uploads"   # Folder for storing images
-public_folder: "/uploads" # Public path for images
+media_folder: "Souluarte_Code\img"
+public_folder: "Souluarte_Code\js"
 
 collections:
   - name: "pages"
@@ -12,6 +12,6 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "Old_Home.html"  # Path to your homepage file
+        file: "Old_Home.html"
         fields:
           - { label: "Pedidos Text", name: "text_pedidos", widget: "string" }
