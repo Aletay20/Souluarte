@@ -3,8 +3,8 @@ backend:
   repo: Aletay20/Souluarte
   branch: main
 
-media_folder: "Souluarte_Code\ img"
-public_folder: "Souluarte_Code\ js"
+media_folder: "../img"          # Adjusted to go up one level from 'admin'
+public_folder: "../js"          # Adjusted to go up one level from 'admin'
 
 collections:
   - name: "pages"
@@ -12,6 +12,6 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "Old_Home.html"
+        file: "../Old_Home.html"    # Adjusted to go up one level to locate Old_Home.html
         fields:
           - { label: "Pedidos Text", name: "text_pedidos", widget: "string" }
