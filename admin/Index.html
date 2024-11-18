@@ -8,11 +8,24 @@
    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css">
 
   <!-- Optional: Your own CSS for CMS-specific custom styles -->
+	
+	
 </head>
 <body>
   <!-- Netlify CMS will initialize here -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	<script src="identity.js"></script>
+	  <script>
+        // Initialize Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.open(); // Open the modal to let the user log in or sign up
+                }
+            });
+            window.netlifyIdentity.init();
+        }
+    </script>
 </body>
 </html>
