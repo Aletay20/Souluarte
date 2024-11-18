@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: git
   repo: Aletay20/Souluarte # Your GitHub repository
   branch: main
 
