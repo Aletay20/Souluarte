@@ -3,8 +3,8 @@ backend:
   repo: Aletay20/Souluarte # Your GitHub repository
   branch: main
 
-media_folder: "/img"       # Go up one level to access 'img' folder
-public_folder: "/img"        # The public path to access images from the frontend
+media_folder: "admin/img"       # Go up one level to access 'img' folder
+public_folder: "/admin/img"        # The public path to access images from the frontend
 
 collections:
   - name: "pages"
@@ -12,7 +12,7 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "/Old_Home.html"  # Go up one level to access 'Old_Home.html' from the root
+        file: "admin/Old_Home.html"  # Go up one level to access 'Old_Home.html' from the root
         fields:
           - { label: "Pedidos Text", name: "text_pedidos", widget: "string" }
 
