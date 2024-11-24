@@ -1,14 +1,14 @@
+<!DOCTYPE html>
+
 ---
-title: Homepage
-text_pedidos: Pedidos personalizados só aqui!
+text_pedidos: "Pedidos personalizados só aqui!"
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title }}</title>
+<title>Homepage</title>
 	<link rel="stylesheet" href="../reset.css">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,7 +81,7 @@ text_pedidos: Pedidos personalizados só aqui!
 			</div>
 			<div class="col-7 col-md-3 d-flex justify-content-start justify-content-md-center align-self-center align-items-md-center flex-column">
 				<div class="Tittles text-start text-md-center"><h1>Pedidos</h1></div>
-			<div class="text text-start text-md-center pb-3"><p>{{ text_pedidos }}<br>Faça já a sua encomenda!</p></div>
+			<div class="text text-start text-md-center pb-3"><p> {{ text_pedidos }} <br>Faça já a sua encomenda!</p></div>
 			<a href="Pedidos_Especiais.html" class="text-decoration-none"><div class="bg-black rounded-4 d-flex justify-content-center align-content-center px-3 py-2 width-fit Black_Box">
 				<div class="text-light text-center button-text ms-1"><p>Mais informações</p></div>
 			</div></a>
@@ -266,5 +266,16 @@ text_pedidos: Pedidos personalizados só aqui!
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script>
+        // Initialize Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.open(); // Open the modal to let the user log in or sign up
+                }
+            });
+            window.netlifyIdentity.init();
+        }
+    </script>
 	</body>
 	</html>
