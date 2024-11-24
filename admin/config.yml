@@ -1,4 +1,4 @@
-
+backend:
   name: git-gateway
   repo: Aletay20/Souluarte 
   branch: main
@@ -11,7 +11,7 @@ collections:
     label: "Pages"
     files:
       - label: "Homepage"
-        name: "Index"
+        name: "index"
         file: "admin/Old_Home.html"  
         fields:
           - { label: "Pedidos Text", name: "text_pedidos", widget: "string" }
